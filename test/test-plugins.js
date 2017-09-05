@@ -15,7 +15,8 @@ tap.test('test plugins config', (t) => {
     let plugin;
 
     const arrayEntryTestMessage =
-      `plugins[${index}] must only be an array if has both plugin and options`;
+      `plugins[${index}] must only be an array if it has ` +
+      'both plugin and options';
 
     if (Array.isArray(entry)) {
       t.ok(entry.length > 1, arrayEntryTestMessage);

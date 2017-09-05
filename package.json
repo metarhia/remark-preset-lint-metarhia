@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "commitmsg": "commitlint -e",
-    "lint": "eslint .",
+    "lint": "npm run -s lint-js && npm run -s lint-md",
+    "lint-js": "eslint .",
+    "lint-md": "remark .",
     "test": "npm run -s lint && npm run -s test-tap",
     "test-ci": "npm test && ./scripts/lint-commit-ci.sh",
     "test-tap": "tap --100 test",
@@ -92,6 +94,7 @@
     "eslint": "^4.6.1",
     "eslint-plugin-import": "^2.7.0",
     "husky": "^0.14.3",
+    "remark-cli": "^4.0.0",
     "standard-version": "^4.2.0",
     "tap": "^10.7.2"
   }

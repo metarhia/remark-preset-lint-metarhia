@@ -7,7 +7,7 @@
     "commitmsg": "commitlint -e",
     "lint": "npm run -s lint-js && npm run -s lint-md",
     "lint-js": "eslint .",
-    "lint-md": "remark .",
+    "lint-md": "remark --quiet .",
     "test": "npm run -s lint && npm run -s test-tap",
     "test-ci": "npm test && ./scripts/lint-commit-ci.sh",
     "test-tap": "tap --100 test",

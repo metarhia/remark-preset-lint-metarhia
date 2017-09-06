@@ -6,9 +6,14 @@ All notable changes to this project will be documented in this file. See [standa
 ## [1.0.1](https://github.com/metarhia/remark-preset-lint-metarhia/compare/v1.0.0...v1.0.1) (2017-09-06)
 
 
+### Bug Fixes
+
+* **docs:** fix the link to LICENSE ([288f0bf](https://github.com/metarhia/remark-preset-lint-metarhia/commit/288f0bf))
+
+
 
 <a name="1.0.0"></a>
-# 1.0.0 (2017-09-06)
+## 1.0.0 (2017-09-06)
 
 
 ### Bug Fixes

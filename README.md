@@ -33,7 +33,7 @@ remark .
 
 MIT. See the [LICENSE][] file for details.
 
-[LICENSE]: LICENSE.md
+[LICENSE]: LICENSE
 [metarhia-jstp]: https://github.com/metarhia/jstp
 [remark-lint]: https://github.com/wooorm/remark-lint
 [travis-badge]: https://travis-ci.org/metarhia/remark-preset-lint-metarhia.svg?branch=master

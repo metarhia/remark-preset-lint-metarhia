@@ -2,6 +2,30 @@
 
 const tap = require('tap');
 
+const testArrayPluginEntry = entry => (t) => {
+  t.equal(entry.length, 2, 'entry must comprise two elements');
+
+  const [plugin, config] = entry;
+
+  t.type(plugin, 'function', 'plugin must be a function');
+
+  t.ok(Array.isArray(config), 'config must be an array');
+  t.ok(
+    config.length === 1 || config.length === 2,
+    'config must comprise one or two elements'
+  );
+
+  const [errorLevel] = config;
+  t.match(errorLevel, /^(warn|error)$/, 'error level must be a suported value');
+
+  t.end();
+};
+
+const testNonArrayPluginEntry = entry => (t) => {
+  t.type(entry, 'function', 'entry must be a function');
+  t.end();
+};
+
 tap.test('test plugins config', (t) => {
   let config;
 
@@ -12,25 +36,17 @@ tap.test('test plugins config', (t) => {
   t.ok(Array.isArray(config.plugins), 'plugins array must be exported');
 
   for (const [index, entry] of config.plugins.entries()) {
-    let plugin;
-
-    const arrayEntryTestMessage =
-      `plugins[${index}] must only be an array if it has ` +
-      'both plugin and options';
-
     if (Array.isArray(entry)) {
-      t.ok(entry.length > 1, arrayEntryTestMessage);
-      plugin = entry[0];
+      t.test(
+        `test array-type entry plugins[${index}]`,
+        testArrayPluginEntry(entry)
+      );
     } else {
-      t.pass(arrayEntryTestMessage);
-      plugin = entry;
+      t.test(
+        `test non-array-type entry plugins[${index}]`,
+        testNonArrayPluginEntry(entry)
+      );
     }
-
-    t.type(
-      plugin,
-      'function',
-      `plugin in plugins[${index}] must be a function`
-    );
   }
 
   t.end();

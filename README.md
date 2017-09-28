@@ -1,6 +1,7 @@
 # remark-preset-lint-metarhia
 
 [![Build Status][travis-badge]][travis-url]
+[![Greenkeeper badge](https://badges.greenkeeper.io/metarhia/remark-preset-lint-metarhia.svg)](https://greenkeeper.io/)
 
 Opinionated [remark-lint][] preset, originated from the config used in
 [metarhia-jstp][] and decoupled into a separate and shareable one.

@@ -89,7 +89,7 @@
     "remark-lint-unordered-list-marker-style": "^1.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^4.0.0",
+    "@commitlint/cli": "^5.0.0",
     "@commitlint/config-angular": "^4.2.1",
     "eslint": "^4.6.1",
     "eslint-config-metarhia": "^1.0.0",

@@ -95,7 +95,7 @@
     "eslint-config-metarhia": "^2.0.0",
     "eslint-plugin-import": "^2.8.0",
     "husky": "^0.14.3",
-    "remark-cli": "^4.0.0",
+    "remark-cli": "^5.0.0",
     "standard-version": "^4.2.0",
     "tap": "^11.0.0"
   }

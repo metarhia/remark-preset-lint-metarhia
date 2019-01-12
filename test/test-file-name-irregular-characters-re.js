@@ -4,7 +4,7 @@ const tap = require('tap');
 
 const regex = require('../lib/file-name-irregular-characters-re');
 
-tap.test('test regex for no-file-name-irregular-characters', (t) => {
+tap.test('test regex for no-file-name-irregular-characters', t => {
   t.notMatch('first.md', regex,
     'must allow lowercase latin letters'
   );

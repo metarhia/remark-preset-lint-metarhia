@@ -2,7 +2,7 @@
 
 const tap = require('tap');
 
-const testArrayPluginEntry = entry => (t) => {
+const testArrayPluginEntry = entry => t => {
   t.equal(entry.length, 2, 'entry must comprise two elements');
 
   const [plugin, config] = entry;
@@ -21,12 +21,12 @@ const testArrayPluginEntry = entry => (t) => {
   t.end();
 };
 
-const testNonArrayPluginEntry = entry => (t) => {
+const testNonArrayPluginEntry = entry => t => {
   t.type(entry, 'function', 'entry must be a function');
   t.end();
 };
 
-tap.test('test plugins config', (t) => {
+tap.test('test plugins config', t => {
   let config;
 
   t.doesNotThrow(() => {

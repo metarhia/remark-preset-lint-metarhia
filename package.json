@@ -1,6 +1,6 @@
 {
   "name": "remark-preset-lint-metarhia",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Opinionated remark-lint preset",
   "main": "index.js",
   "scripts": {

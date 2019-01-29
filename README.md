@@ -18,9 +18,7 @@ Create `.remarkrc` file:
 
 ```json
 {
-  "plugins": [
-    "remark-preset-lint-metarhia"
-  ]
+  "plugins": ["remark-preset-lint-metarhia"]
 }
 ```
 
@@ -32,11 +30,11 @@ remark .
 
 ## Contributing
 
-Please adhere to [Conventional Commits][] styleguide for commit messages (`npm
-install` creates a Git hook that lints your commit messages, and they are also
-checked on CI, but please write them properly beforehand so that they don't get
-rejected.  If that happens locally while committing, though, don't worry, your
-commit message isn't lost, you can still find it in `.git/COMMIT_EDITMSG`).
+Please adhere to [Conventional Commits][] styleguide for commit messages
+(`npm install` creates a Git hook that lints your commit messages, and they are
+also checked on CI, but please write them properly beforehand so that they don't
+get rejected. If that happens locally while committing, though, don't worry,
+your commit message isn't lost, you can still find it in `.git/COMMIT_EDITMSG`).
 
 ### Releasing
 
@@ -57,8 +55,8 @@ in Git, and publish it to npm registry.
 
 MIT. See the [LICENSE][] file for details.
 
-[Conventional Commits]: https://conventionalcommits.org/
-[LICENSE]: LICENSE
+[conventional commits]: https://conventionalcommits.org/
+[license]: LICENSE
 [metarhia-jstp]: https://github.com/metarhia/jstp
 [remark-lint]: https://github.com/wooorm/remark-lint
 [travis-badge]: https://travis-ci.org/metarhia/remark-preset-lint-metarhia.svg?branch=master

@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "commitmsg": "commitlint -e",
-    "lint": "npm run -s lint-js && npm run -s lint-md",
+    "lint": "npm run -s lint-js && npm run -s lint-md && prettier -c \"**/*.js\" \"**/*.json\" \"**/*.md\" \".*rc\" \"**/*.yml\"",
     "lint-js": "eslint .",
+    "fmt": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\" \".*rc\" \"**/*.yml\"",
     "lint-md": "remark --quiet .",
     "test": "npm run -s lint && npm run -s test-tap",
     "test-ci": "npm test && ./scripts/lint-commit-ci.sh",
@@ -93,8 +94,11 @@
     "@commitlint/config-conventional": "^7.3.1",
     "eslint": "^5.12.0",
     "eslint-config-metarhia": "^6.1.0",
+    "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "husky": "^1.3.1",
+    "prettier": "1.16.x",
     "remark-cli": "^6.0.1",
     "standard-version": "^4.4.0",
     "tap": "^12.1.1"

@@ -101,6 +101,6 @@
     "prettier": "1.16.x",
     "remark-cli": "^6.0.1",
     "standard-version": "^4.4.0",
-    "tap": "^12.1.1"
+    "tap": "^13.0.0"
   }
 }

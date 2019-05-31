@@ -91,7 +91,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^7.3.1",
-    "@commitlint/config-conventional": "^7.3.1",
+    "@commitlint/config-conventional": "^8.0.0",
     "eslint": "^5.12.0",
     "eslint-config-metarhia": "^6.1.0",
     "eslint-config-prettier": "^4.0.0",

@@ -54,7 +54,7 @@
     "remark-lint-link-title-style": "^1.0.3",
     "remark-lint-list-item-content-indent": "^1.0.2",
     "remark-lint-list-item-indent": "^1.0.3",
-    "remark-lint-maximum-line-length": "^1.1.1",
+    "remark-lint-maximum-line-length": "^1.2.0",
     "remark-lint-no-auto-link-without-protocol": "^1.0.2",
     "remark-lint-no-blockquote-without-marker": "^2.0.2",
     "remark-lint-no-consecutive-blank-lines": "^1.0.2",
@@ -79,7 +79,7 @@
     "remark-lint-no-shortcut-reference-link": "^1.0.3",
     "remark-lint-no-table-indentation": "^1.0.3",
     "remark-lint-no-tabs": "^1.0.2",
-    "remark-lint-no-undefined-references": "^1.0.3",
+    "remark-lint-no-undefined-references": "^1.1.0",
     "remark-lint-no-unused-definitions": "^1.0.4",
     "remark-lint-ordered-list-marker-style": "^1.0.2",
     "remark-lint-rule-style": "^1.0.2",
@@ -90,17 +90,17 @@
     "remark-lint-unordered-list-marker-style": "^1.0.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.3.1",
-    "@commitlint/config-conventional": "^7.3.1",
-    "eslint": "^5.12.0",
-    "eslint-config-metarhia": "^6.1.0",
-    "eslint-config-prettier": "^4.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-prettier": "^3.0.1",
-    "husky": "^1.3.1",
-    "prettier": "1.16.x",
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-metarhia": "^7.0.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^2.3.0",
+    "prettier": "1.17.x",
     "remark-cli": "^6.0.1",
-    "standard-version": "^4.4.0",
-    "tap": "^12.1.1"
+    "standard-version": "^6.0.1",
+    "tap": "^14.2.0"
   }
 }
